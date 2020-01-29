@@ -1,27 +1,22 @@
 public class Tilesmain {
-	
-	private static TilesGame defaultpeli;
-	private static TilesGUI defaultgui;
+
+	private static TilesGUI defaultGUI;
 	
 	public static void main (String [] args) {
-		
 		newGame();
-		
 	}
 	public static void newGame() {
 		
-		int selection = GridsizeReader.readGridsize();
+		int selection = GridSizeReader.readGridSize();
+
 		if(selection==0)
 			System.exit(0);
-        
-		defaultpeli=new TilesGame(selection);
-		
-		if (defaultgui==null) {
-			defaultgui=new TilesGUI(defaultpeli);
-		}
-		else defaultgui.newGameGUI(defaultpeli);
-	}
-	
-}
 
-		
+		TilesGame defaultGame = new TilesGame(selection);
+
+		if (defaultGUI==null) {
+			defaultGUI = new TilesGUI(defaultGame);
+		}
+		else defaultGUI.newGameGUI(defaultGame);
+	}
+}

@@ -43,7 +43,4 @@ public class Tile {
 	public void setIsSelected(boolean isSelected) {
 		this.isSelected = isSelected;
 	}
-	
-	
-	
 }

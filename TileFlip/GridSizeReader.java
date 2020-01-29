@@ -1,7 +1,7 @@
 import javax.swing.*;
-public interface GridsizeReader{
+public interface GridSizeReader{
 
-	public static int readGridsize() {
+	static int readGridSize() {
 		
 		Object[] sizes = {"Very small (5x5 tiles)", "Small (6x6 tiles)","Medium (7x7 tiles)","Large (8x8 tiles)", "Huge (9x9 tiles)"};
 		Object input = JOptionPane.showInputDialog(null,"Please select the size of your game.","Size selection",JOptionPane.PLAIN_MESSAGE,null,sizes,"Medium (7x7 tiles)");
@@ -14,7 +14,6 @@ public interface GridsizeReader{
 				return (i+5);
 			}
 		}
-	return 0;
-
+		return 0;
 	}
 }
