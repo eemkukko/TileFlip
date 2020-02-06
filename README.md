@@ -1,5 +1,5 @@
 # TileFlip
-A simple (and old) puzzler game
+A simple puzzler game
 
 This repository contains one of my earlier projects, a game called TileFlip. The code could use a refactor...
 
